@@ -1,17 +1,17 @@
 # PsJump
-Quick commandline navigation by bookmarks (jumps). Supercedes my old [shelljump](https://github.com/kjerk/shelljump) project, as a binary powershell module.
 -----
+
+Quick commandline navigation by bookmarks (jumps). Supercedes my old [shelljump](https://github.com/kjerk/shelljump) project, as a binary powershell module.
 
 Add to your PS profile with
 
-```Import-Module Path\To\Module\PsJump.psd1```
+```Import-Module .\Path\To\Module\PsJump.psd1```
 
 Inspired by "Quickly navigate your filesystem from the command-line"
 http://tinyurl.com/nx6wzvq
 
-Script allows for bookmarking of folders under aliases and the
-capability to jump to them, persisting between shell sessions in
-a json file.
+Allows for bookmarking of folders under aliases and the capability to jump to them, 
+persisting between shell sessions in an (editable) json file.
 
 ### Command aliases:
     jumps           | List all existing bookmarks.
