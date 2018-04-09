@@ -39,11 +39,11 @@ persisting between shell sessions in an (editable) json file.
 
 ### Example:
 ```
-	C:\> cd '.\Program Files\Sublime Text 2'
-	C:\Program Files\Sublime Text 2> mark st2
-	C:\Program Files\Sublime Text 2> cd \
-	C:\> jump st2
-	C:\Program Files\Sublime Text 2> marks
-	st2        -> C:\Program Files\Sublime Text 2
-	C:\Program Files\Sublime Text 2> unmark st2
+    C:\> cd '.\Program Files\Sublime Text 2'
+    C:\Program Files\Sublime Text 2> mark st2
+    C:\Program Files\Sublime Text 2> cd \
+    C:\> jump st2
+    C:\Program Files\Sublime Text 2> jumps
+    st2        -> C:\Program Files\Sublime Text 2
+    C:\Program Files\Sublime Text 2> unmark st2
 ```
