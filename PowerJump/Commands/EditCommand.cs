@@ -1,8 +1,8 @@
 ﻿using System.Diagnostics;
 using System.Management.Automation;
-using Core.Data;
+using PowerJump.Data;
 
-namespace Core.Commands
+namespace PowerJump.Commands
 {
 	[Cmdlet(VerbsData.Edit, "Jumps")]
 	[Alias("editjumps")]

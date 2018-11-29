@@ -4,7 +4,7 @@ using System.IO;
 using System.Linq;
 using fastJSON;
 
-namespace Core.Data
+namespace PowerJump.Data
 {
 	internal class JumpLookup
 	{

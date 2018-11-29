@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Management.Automation;
-using Core.Data;
+using PowerJump.Data;
 
-namespace Core.Commands
+namespace PowerJump.Commands
 {
 	[Cmdlet(VerbsCommon.Add, "Jump")]
 	[Alias("mark")]
