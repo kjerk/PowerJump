@@ -3,25 +3,25 @@
 @{
 
 # Script module or binary module file associated with this manifest
-RootModule = 'PsJump.dll'
+RootModule = 'PowerJump.dll'
 
 # Version number of this module.
-ModuleVersion = '1.0'
+ModuleVersion = '0.2'
 
 # ID used to uniquely identify this module
 GUID = 'c732c504-4f78-4311-8023-1ec0dd92cd7b'
 
 # Author of this module
-Author = 'kjerk'
+Author = 'kjerkdev@gmail.com'
 
 # Description of the functionality provided by this module
 Description = 'A powershell module enabling bookmarking and quick jumping around the filesystem.'
 
 # Minimum version of the Windows PowerShell engine required by this module
-PowerShellVersion = '5.0'
+# PowerShellVersion = '5.0'
 
 # Minimum version of the .NET Framework required by this module
-DotNetFrameworkVersion = '4.0'
+# DotNetFrameworkVersion = '4.0'
 
 # Functions to export from this module
 FunctionsToExport = '*'

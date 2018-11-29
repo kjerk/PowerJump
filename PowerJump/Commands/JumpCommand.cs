@@ -5,7 +5,7 @@ using Core.Data;
 namespace Core.Commands
 {
 	[Cmdlet(VerbsCommon.Find, "Jump")]
-	[Alias("jump")]
+	[Alias("jump", "j")]
 	public class JumpCommand : PSCmdlet
 	{
 		private JumpLookup jumps = JumpLookup.Instance;

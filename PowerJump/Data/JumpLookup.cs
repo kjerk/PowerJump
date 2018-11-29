@@ -8,14 +8,12 @@ namespace Core.Data
 {
 	internal class JumpLookup
 	{
-		// Singleton
-		private static JumpLookup _instance;
-		public static JumpLookup Instance => _instance ?? (_instance = new JumpLookup());
+	    public static JumpLookup Instance { get; private set; } = new JumpLookup();
 
-		internal readonly string JsonFilePath = $"{Environment.GetEnvironmentVariable("userprofile")}\\Documents\\Jumps.json";
+        internal readonly string JsonFilePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Jumps.json");
 
 		private long _lastUpdated;
-		private Dictionary<String, String> _jumps = new Dictionary<string, string>();
+		private Dictionary<string, string> _jumps = new Dictionary<string, string>();
 
 		public JumpLookup() {
 			if(File.Exists(JsonFilePath)) {

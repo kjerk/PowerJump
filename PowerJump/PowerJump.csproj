@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <ApplicationIcon>Folders.ico</ApplicationIcon>
+    <LangVersion>latest</LangVersion>
+    <Version>0.2.0</Version>
+    <Company />
+    <Product>PowerJump</Product>
+    <Authors>kjerk</Authors>
+    <NeutralLanguage>en</NeutralLanguage>
+    <PackageTags>folders, bookmarks, folder, bookmark</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Commands\" />
+    <Folder Include="Data\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Costura.Fody" Version="3.2.0" />
+    <PackageReference Include="fastJSON" Version="2.2.0.1" />
+    <PackageReference Include="Fody" Version="3.3.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="System.Management.Automation" Version="6.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="FodyWeavers.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="PowerJump.psd1">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

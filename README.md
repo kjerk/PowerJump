@@ -1,11 +1,11 @@
-# PsJump
+# PowerJump
 -----
 
 Quick commandline navigation by bookmarks (jumps). Supercedes my old [shelljump](https://github.com/kjerk/shelljump) project, as a binary powershell module.
 
 Add to your PS profile with
 
-```Import-Module .\Path\To\Module\PsJump.psd1```
+```Import-Module .\Path\To\Module\PowerJump.psd1```
 
 Inspired by "Quickly navigate your filesystem from the command-line"
 http://tinyurl.com/nx6wzvq

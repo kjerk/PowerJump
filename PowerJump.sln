@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2015
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PsJumpCore", "PsJumpCore\PsJumpCore.csproj", "{04462041-D329-4B48-9AFB-655E9FB69FF1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PowerJump", "PowerJump\PowerJump.csproj", "{848D1CCE-664A-4D0A-B2CC-8AE5C7772140}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{04462041-D329-4B48-9AFB-655E9FB69FF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{04462041-D329-4B48-9AFB-655E9FB69FF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{04462041-D329-4B48-9AFB-655E9FB69FF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{04462041-D329-4B48-9AFB-655E9FB69FF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{848D1CCE-664A-4D0A-B2CC-8AE5C7772140}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{848D1CCE-664A-4D0A-B2CC-8AE5C7772140}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{848D1CCE-664A-4D0A-B2CC-8AE5C7772140}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{848D1CCE-664A-4D0A-B2CC-8AE5C7772140}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
