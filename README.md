@@ -15,6 +15,7 @@ persisting between shell sessions in an (editable) json file.
 
 ### Command aliases:
     jumps           | List all existing bookmarks.
+    j (alias)       | Jump to a bookmarked folder.
     jump (alias)    | Jump to a bookmarked folder.
     mark (alias)    | Bookmarks current directory with a given alias.
     unmark [alias]  | Removes alias.
