@@ -24,12 +24,12 @@ persisting between shell sessions in an (editable) json file.
     editjumps       | Open .json file in default editor, await exit, and reload.
 	
 ### Underlying functions -> related alias:
-    Find-Jump    -> jump
     Add-Jump     -> mark
-    Remove-Jump  -> unmark
     Edit-Jumps   -> editjumps
-    Get-Jumps    -> jumps
+    Find-Jump    -> jump, j
     Import-Jumps -> loadjumps
+    Get-Jumps    -> jumps
+    Remove-Jump  -> unmark
     Save-Jumps   -> savejumps
 
 ### Storage:
