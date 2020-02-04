@@ -6,13 +6,13 @@
 RootModule = 'PowerJump.dll'
 
 # Version number of this module.
-ModuleVersion = '0.2'
+ModuleVersion = '0.3'
 
 # ID used to uniquely identify this module
 GUID = 'c732c504-4f78-4311-8023-1ec0dd92cd7b'
 
 # Author of this module
-Author = 'kjerkdev@gmail.com'
+Author = 'kjerk@kjerk.dev'
 
 # Description of the functionality provided by this module
 Description = 'A powershell module enabling bookmarking and quick jumping around the filesystem.'

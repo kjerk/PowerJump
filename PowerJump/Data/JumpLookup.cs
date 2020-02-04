@@ -2,20 +2,20 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using fastJSON;
+using Newtonsoft.Json;
 
 namespace PowerJump.Data
 {
 	internal class JumpLookup
 	{
-	    public static JumpLookup Instance { get; private set; } = new JumpLookup();
+	    public static JumpLookup Instance { get; } = new JumpLookup();
 
         internal readonly string JsonFilePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Jumps.json");
 
 		private long _lastUpdated;
-		private Dictionary<string, string> _jumps = new Dictionary<string, string>();
+		private readonly Dictionary<string, string> _jumps = new Dictionary<string, string>();
 
-		public JumpLookup() {
+		private JumpLookup() {
 			if(File.Exists(JsonFilePath)) {
 				Load();
 			} else {
@@ -33,21 +33,21 @@ namespace PowerJump.Data
 			if (File.Exists(JsonFilePath)) {
 				File.Copy(JsonFilePath, JsonFilePath.Replace(".json", ".prev.json"), true);
 			}
-			File.WriteAllText(JsonFilePath, JSON.ToNiceJSON(_jumps));
+			File.WriteAllText(JsonFilePath, JsonConvert.SerializeObject(_jumps, Formatting.Indented));
 			UpdateLastUpdatedTime();
 		}
 
 		private bool NeedsUpdate() => File.GetLastWriteTime(JsonFilePath).ToFileTimeUtc() > _lastUpdated;
 
-		public void UpdateLastUpdatedTime() {
+		private void UpdateLastUpdatedTime() {
 			_lastUpdated = File.GetLastWriteTime(JsonFilePath).ToFileTimeUtc();
 		}
 
 		public void Load() {
 			UpdateLastUpdatedTime();
-			var tempDict = (Dictionary<string, object>)JSON.Parse(File.ReadAllText(JsonFilePath));
-			foreach (var kvp in tempDict) {
-				_jumps[kvp.Key] = kvp.Value.ToString();
+			var jumpLegend = JsonConvert.DeserializeObject<Dictionary<string, string>>(File.ReadAllText(JsonFilePath));
+			foreach (var (jumpName, jumpPath) in jumpLegend) {
+				_jumps[jumpName] = jumpPath;
 			}
 			Console.WriteLine($"[{_jumps.Count}] Jump(s) loaded");
 		}
