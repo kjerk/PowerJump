@@ -34,9 +34,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="PowerJump.psd1">
+    <None Include="PowerJump.psd1" Pack="true" PackagePath="lib/netcoreapp2.1/" />
+    <AdditionalFiles Include="PowerJump.psd1">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
+    </AdditionalFiles>
   </ItemGroup>
 
 </Project>
